@@ -4,7 +4,7 @@ Sometimes components have conflicting prop names. This showed up when using [mat
 I decided to attempt to make my own component based on an existing one, and dynamically import existing props if they exist.
 With Material-UI however I have been using the word classes consistently in my coding, so bringing it in as props wasn't working, but renaming them worked!
 
-```
+```javascript
 function ThemeButton({ ...props }) {
   const classes = useStyles();
   const { onClick, type, to, title, classes: classList } = props;
